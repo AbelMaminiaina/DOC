@@ -1,0 +1,450 @@
+/* =====================================================
+   IBIQ — Portail Qualité des Données
+   CSS SharePoint — compatible IE11+ / Edge / Chrome
+   ===================================================== */
+
+/* --- Fonts (Google Fonts via CDN) --- */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;600&display=swap');
+
+/* ─── Reset ciblé ─────────────────────────────────── */
+.ibiq-portal *,
+.ibiq-portal *::before,
+.ibiq-portal *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ─── Conteneur racine ────────────────────────────── */
+.ibiq-portal {
+  font-family: 'DM Sans', Arial, sans-serif;
+  background: #f3f4f6;
+  color: #1f2937;
+  line-height: 1.5;
+}
+
+/* ─── Header ──────────────────────────────────────── */
+.ibiq-header {
+  background: #fff;
+  border-bottom: 1px solid #d1d5db;
+  padding: 0 32px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ibiq-logo {
+  font-family: 'Syne', Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #1a4f8a;
+}
+.ibiq-logo span {
+  color: #1f2937;
+}
+
+.ibiq-header-meta {
+  font-size: 13px;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ibiq-badge-team {
+  background: #1a4f8a;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 13px;
+}
+
+/* ─── Navigation ──────────────────────────────────── */
+.ibiq-nav {
+  background: #fff;
+  border-bottom: 1px solid #d1d5db;
+  padding: 0 32px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ibiq-nav a {
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+.ibiq-nav a:hover {
+  background: #f3f4f6;
+  color: #1f2937;
+}
+.ibiq-nav a.active {
+  background: #e8f0f8;
+  color: #1a4f8a;
+}
+
+.ibiq-nav-sep {
+  width: 1px;
+  height: 20px;
+  background: #d1d5db;
+  margin: 0 4px;
+}
+
+/* ─── Hero ────────────────────────────────────────── */
+.ibiq-hero {
+  background: #dbeafe;
+  border-bottom: 1px solid #d1d5db;
+  padding: 48px 32px 40px;
+}
+
+.ibiq-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.ibiq-hero-left {
+  flex: 1;
+}
+
+.ibiq-hero-title {
+  font-family: 'Syne', Arial, sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+.ibiq-hero-title .accent {
+  color: #1a4f8a;
+}
+
+.ibiq-hero-desc {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ibiq-hero-refs {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.ibiq-ref-tag {
+  background: #e9ebee;
+  border: 1px solid #d1d5db;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #6b7280;
+}
+.ibiq-ref-tag a {
+  color: #1a4f8a;
+  text-decoration: none;
+}
+.ibiq-ref-tag a:hover {
+  text-decoration: underline;
+}
+
+.ibiq-hero-right {
+  flex: 0 0 380px;
+}
+
+/* ─── Widget Actualités ───────────────────────────── */
+.ibiq-news-widget {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 19px;
+}
+
+.ibiq-news-widget-title {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #6b7280;
+  margin-bottom: 13px;
+}
+
+.ibiq-news-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #d1d5db;
+  display: flex;
+  align-items: baseline;
+  gap: 13px;
+}
+.ibiq-news-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.ibiq-news-date {
+  font-size: 11px;
+  font-weight: 600;
+  color: #1a4f8a;
+  white-space: nowrap;
+}
+
+.ibiq-news-text {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* ─── Main ────────────────────────────────────────── */
+.ibiq-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+/* ─── Légende ─────────────────────────────────────── */
+.ibiq-legend {
+  margin-bottom: 32px;
+  padding: 14px 19px;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 12px;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.ibiq-legend b {
+  margin-right: 4px;
+}
+
+.ibiq-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.ibiq-dot--ppt   { background: #C43E1C; }
+.ibiq-dot--word  { background: #1a56aa; }
+.ibiq-dot--app   { background: #059669; }
+.ibiq-dot--wiki  { background: #7c3aed; }
+.ibiq-dot--video { background: #ef4444; }
+
+/* ─── Sections ────────────────────────────────────── */
+.ibiq-section {
+  margin-bottom: 56px;
+}
+
+.ibiq-section-header {
+  margin-bottom: 24px;
+  padding: 14px 19px;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+}
+.ibiq-section-header--pod   { background: #1a4f8a; }
+.ibiq-section-header--proj  { background: #374151; }
+.ibiq-section-header--apps  { background: #065f46; }
+.ibiq-section-header--docs  { background: #5b21b6; }
+
+.ibiq-section-header-icon {
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.ibiq-section-header-body {}
+
+.ibiq-section-header-title {
+  font-family: 'Syne', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.ibiq-section-header-sub {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 2px;
+}
+
+/* ─── Sous-sections ───────────────────────────────── */
+.ibiq-subsection {
+  margin-bottom: 19px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ibiq-subsection-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ibiq-subsection-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 32px;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+/* Couleurs des icônes de sous-section */
+.ibiq-subsection-icon--orange { background: #fef3e6; border: 1px solid #fcd9b6; }
+.ibiq-subsection-icon--green  { background: #d1fae5; border: 1px solid #a7f3d0; }
+.ibiq-subsection-icon--red    { background: #fee2e2; border: 1px solid #fecaca; }
+.ibiq-subsection-icon--purple { background: #ede9fe; border: 1px solid #ddd6fe; }
+.ibiq-subsection-icon--yellow { background: #fef3c7; border: 1px solid #fde68a; }
+.ibiq-subsection-icon--blue   { background: #dbeafe; border: 1px solid #bfdbfe; }
+
+.ibiq-subsection-title {
+  font-family: 'Syne', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.ibiq-subsection-refs {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* ─── Grille de cartes ────────────────────────────── */
+.ibiq-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+/* ─── Carte ───────────────────────────────────────── */
+.ibiq-card {
+  width: calc(33.333% - 11px);
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 16px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  transition: box-shadow 0.15s, border-color 0.15s;
+  position: relative;
+}
+
+.ibiq-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border-color: #9ca3af;
+}
+
+.ibiq-card--obsolete {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.ibiq-card-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 38px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Syne', Arial, sans-serif;
+  flex-shrink: 0;
+}
+
+/* Variantes couleur des icônes de carte */
+.ibiq-card-icon--ppt  { background: #fce9e5; color: #C43E1C; border: 1px solid #f0c4bb; }
+.ibiq-card-icon--word { background: #dbeafe; color: #1a56aa; border: 1px solid #bfdbfe; }
+.ibiq-card-icon--app  { background: #d1fae5; color: #059669; border: 1px solid #a7f3d0; }
+.ibiq-card-icon--wiki { background: #f3e8ff; color: #7c3aed; border: 1px solid #ddd6fe; }
+.ibiq-card-icon--vid  { background: #fee2e2; color: #dc2626; border: 1px solid #fecaca; }
+
+.ibiq-card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.ibiq-card-title {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.ibiq-card-desc {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.ibiq-card-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.ibiq-card-badge--ppt     { background: #fce9e5; color: #C43E1C; }
+.ibiq-card-badge--word    { background: #dbeafe; color: #1a56aa; }
+.ibiq-card-badge--app     { background: #d1fae5; color: #059669; }
+.ibiq-card-badge--wiki    { background: #f3e8ff; color: #7c3aed; }
+.ibiq-card-badge--vid     { background: #fee2e2; color: #dc2626; }
+.ibiq-card-badge--obsolete{ background: #f0f0f0; color: #9ca3af; }
+
+/* ─── Footer ──────────────────────────────────────── */
+.ibiq-footer {
+  border-top: 1px solid #d1d5db;
+  padding: 24px 32px;
+  text-align: center;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* ─── Responsive ──────────────────────────────────── */
+@media (max-width: 900px) {
+  .ibiq-hero-inner {
+    flex-direction: column;
+  }
+  .ibiq-hero-right {
+    flex: none;
+    width: 100%;
+  }
+  .ibiq-card {
+    width: calc(50% - 8px);
+  }
+}
+
+@media (max-width: 600px) {
+  .ibiq-header,
+  .ibiq-nav,
+  .ibiq-hero,
+  .ibiq-main {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .ibiq-card {
+    width: 100%;
+  }
+  .ibiq-hero-title {
+    font-size: 26px;
+  }
+}
